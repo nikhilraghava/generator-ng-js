@@ -48,4 +48,3 @@ README.md
 [daviddm-url]: https://david-dm.org/nikhilraghava/generator-ng-js
 [coveralls-image]: https://coveralls.io/repos/nikhilraghava/generator-ng-js/badge.svg
 [coveralls-url]: https://coveralls.io/r/nikhilraghava/generator-ng-js
-
