@@ -16,37 +16,37 @@ module.exports = Generator.extend({
       name: 'projectName',
       message: 'Your project name:',
       default: this.appname
-    },{
+    }, {
       type: 'input',
       name: 'projectAuthors',
       message: 'Authors:',
       store: true,
-      default: "None"
-    },{
+      default: 'None'
+    }, {
       type: 'input',
       name: 'projectDescription',
       message: 'Description:',
-      default: "None"
-    },{
+      default: 'None'
+    }, {
       type: 'input',
       name: 'projectKeywords',
       message: 'Keywords:',
-      default: "None"
+      default: 'None'
     }, {
       type: 'input',
       name: 'projectMain',
       message: 'Main file:',
-      default: "index.html"
-    },{
+      default: 'index.html'
+    }, {
       type: 'input',
       name: 'projectLicense',
       message: 'License:',
-      default: "MIT"
+      default: 'MIT'
     }, {
       type: 'input',
       name: 'projectHome',
       message: 'Home page:',
-      default: "None"
+      default: 'None'
     }];
     return this.prompt(prompts).then(function (props) {
       // To access props later use this.props.someAnswer;
@@ -91,13 +91,14 @@ module.exports = Generator.extend({
   },
 
   install: function () {
-      this.installDependencies({
-        npm: false,
-        bower: true,
-        yarn: false
-      });
-      // Show exit message
-      this.log(yosay(chalk.yellow("I am done! See yo next time!")))
+    this.installDependencies({
+      npm: false,
+      bower: true,
+      yarn: false
+    });
+    // Show exit message
+    this.log(yosay(chalk.yellow('I am done! See yo next time!')))
   }
 
 });
+
