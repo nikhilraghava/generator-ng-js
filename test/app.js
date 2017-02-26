@@ -15,5 +15,4 @@ describe('generator-ng-js:app', function () {
       'README.md'
     ]);
   });
-
 });
