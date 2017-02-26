@@ -55,39 +55,38 @@ module.exports = Generator.extend({
   },
 
   writing: function () {
-      this.fs.copy(
-        this.templatePath('README.md'),
-        this.destinationPath('README.md')
-      );
-      //noinspection JSUnresolvedVariable
-      this.fs.copyTpl(
-        this.templatePath('_bower.json'),
-        this.destinationPath('bower.json'), {
-          name: this.props.projectName,
-          authors: this.props.projectAuthors,
-          description: this.props.projectDescription,
-          keywords: this.props.projectKeywords,
-          main: this.props.projectMain,
-          license: this.props.projectLicense,
-          homepage: this.props.projectHome
-        }
-      );
-      this.fs.copy(
-        this.templatePath('bowerrc'),
-        this.destinationPath('.bowerrc')
-      );
-      mkdirp.sync('controllers');
-      this.log('controllers directory has been created...');
-      mkdirp.sync('directives');
-      this.log('directives directory has been created...');
-      mkdirp.sync('js');
-      this.log('js directory has been created...');
-      mkdirp.sync('media');
-      this.log('media directory has been created...');
-      mkdirp.sync('views');
-      this.log('views directory has been created...');
-      mkdirp.sync('dependencies');
-      this.log('dependencies directory has been created...');
+    this.fs.copy(
+      this.templatePath('README.md'),
+      this.destinationPath('README.md')
+    );
+    this.fs.copyTpl(
+      this.templatePath('_bower.json'),
+      this.destinationPath('bower.json'), {
+        name: this.props.projectName,
+        authors: this.props.projectAuthors,
+        description: this.props.projectDescription,
+        keywords: this.props.projectKeywords,
+        main: this.props.projectMain,
+        license: this.props.projectLicense,
+        homepage: this.props.projectHome
+      }
+    );
+    this.fs.copy(
+      this.templatePath('bowerrc'),
+      this.destinationPath('.bowerrc')
+    );
+    mkdirp.sync('controllers');
+    this.log('controllers directory has been created...');
+    mkdirp.sync('directives');
+    this.log('directives directory has been created...');
+    mkdirp.sync('js');
+    this.log('js directory has been created...');
+    mkdirp.sync('media');
+    this.log('media directory has been created...');
+    mkdirp.sync('views');
+    this.log('views directory has been created...');
+    mkdirp.sync('dependencies');
+    this.log('dependencies directory has been created...');
   },
 
   install: function () {
@@ -97,8 +96,7 @@ module.exports = Generator.extend({
       yarn: false
     });
     // Show exit message
-    this.log(yosay(chalk.yellow('I am done! See yo next time!')))
+    this.log(yosay(chalk.yellow('I am done! See yo next time!')));
   }
 
 });
-
