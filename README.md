@@ -37,7 +37,7 @@ README.md
 
 ## License
 
- © [Nikhil Raghavendra]()
+MIT
 
 
 [npm-image]: https://badge.fury.io/js/generator-ng-js.svg
