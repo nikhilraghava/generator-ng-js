@@ -1,4 +1,4 @@
-# generator-ng-js [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url]
+# generator-ng-js  [![Build Status][travis-image]][travis-url] 
 > A generator for creating a simple, workable AngularJS project directory.
 
 ## Installation
@@ -40,11 +40,7 @@ README.md
 MIT
 
 
-[npm-image]: https://badge.fury.io/js/generator-ng-js.svg
-[npm-url]: https://npmjs.org/package/generator-ng-js
+
 [travis-image]: https://travis-ci.org/nikhilraghava/generator-ng-js.svg?branch=master
 [travis-url]: https://travis-ci.org/nikhilraghava/generator-ng-js
-[daviddm-image]: https://david-dm.org/nikhilraghava/generator-ng-js.svg?theme=shields.io
-[daviddm-url]: https://david-dm.org/nikhilraghava/generator-ng-js
-[coveralls-image]: https://coveralls.io/repos/nikhilraghava/generator-ng-js/badge.svg
-[coveralls-url]: https://coveralls.io/r/nikhilraghava/generator-ng-js
+
